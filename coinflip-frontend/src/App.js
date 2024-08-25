@@ -85,7 +85,6 @@ async function flipCoin() {
   else{
     alert("Please connect your wallet and enter a valid amount.");
   }
-}
 
 return (
   <div className="App">
@@ -114,5 +113,5 @@ return (
     </main>
   </div>
 );
-
+}
 export default App;
