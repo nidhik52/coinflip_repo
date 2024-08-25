@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {ethers} from 'ethers';
 import './styles';
-import './styles.css';
 
 function App(){
   const [account, setAccount] = useState(null);
