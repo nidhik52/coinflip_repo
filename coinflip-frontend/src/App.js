@@ -18,44 +18,8 @@ function App() {
         setAccount(await signer.getAddress());
 
         // Load the contract
-        const contractAddress = "0x65F2B57c82FD5Fc86296ED30d37918C339435C83"; // Replace with your contract Address
-        const contractABI = [
-          {
-            "inputs": [
-              {
-                "internalType": "bool",
-                "name": "guess",
-                "type": "bool"
-              }
-            ],
-            "name": "flipCoin",
-            "outputs": [],
-            "stateMutability": "payable",
-            "type": "function"
-          },
-          {
-            "inputs": [],
-            "stateMutability": "nonpayable",
-            "type": "constructor"
-          },
-          {
-            "stateMutability": "payable",
-            "type": "receive"
-          },
-          {
-            "inputs": [],
-            "name": "owner",
-            "outputs": [
-              {
-                "internalType": "address",
-                "name": "",
-                "type": "address"
-              }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-          }
-        ]; // Replace with your contract ABI
+        const contractAddress = "YOUR_DEPLOYED_CONTRACT_ADDRESS"; // Replace with your contract Address
+        const contractABI = [/*YOUR_CONTRACT_ABI*/]; // Replace with your contract ABI
         const contract = new ethers.Contract(contractAddress, contractABI, signer);
         setContract(contract); // Corrected function call to set contract
       } catch (error) {
