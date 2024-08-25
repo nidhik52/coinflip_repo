@@ -114,6 +114,5 @@ return (
     </main>
   </div>
 );
-}
 
 export default App;
