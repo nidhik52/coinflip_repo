@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {ethers} from 'ethers';
+import { ethers } from 'ethers';
+import detectEthereumProvider from '@metamask/detect-provider';
 
 function App(){
   const [account, setAccount] = useState(null);
