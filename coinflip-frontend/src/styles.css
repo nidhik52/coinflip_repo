@@ -1,0 +1,22 @@
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
